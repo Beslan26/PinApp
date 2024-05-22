@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <style>
+        /* Пример стилей для карточек */
+        .card {
+            width: 300px;
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            display: inline-block;
+        }
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .card p {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Главная страница</h1>
+    <div>
+        <button onclick="handleButtonClick(1)">Главная</button>
+        <button onclick="handleButtonClick(2)">Создать</button>
+        <button onclick="handleButtonClick(3)">Пользователь</button>
+    </div>
+    <div id="gallery">
+        <!-- Карточки с изображениями и описаниями -->
+        <div class="card">
+            <img src="image1.jpg" alt="Изображение 1">
+            <p>Описание изображения 1</p>
+        </div>
+        <div class="card">
+            <img src="image2.jpg" alt="Изображение 2">
+            <p>Описание изображения 2</p>
+        </div>
+        <div class="card">
+            <img src="image3.jpg" alt="Изображение 3">
+            <p>Описание изображения 3</p>
+        </div>
+        <!-- Добавьте больше карточек по мере необходимости -->
+    </div>
+
+    <script>
+        function handleButtonClick(buttonNumber) {
+            // Обработка нажатия кнопок
+            console.log('Нажата кнопка ' + buttonNumber);
+        }
+    </script>
+</body>
+</html>
