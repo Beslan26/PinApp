@@ -1,25 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
 
-<head>
-    {% load static %}
+{% block title %}Home{% endblock %}
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная страница</title>
-        <link href="{% static 'css/styles.css' %}" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <nav>
-            <button onclick="navigateTo('home')">Главная</button>
-            <button onclick="navigateTo('create')">Создать</button>
-            <button onclick="navigateTo('profile')">Профиль</button>
-        </nav>
-    </header>
-    <main id="content">
-        <!-- Content will be injected here -->
-    </main>
-<!--    <script src="{% static 'js/scripts.js' %}"></script>-->
-</body>
-</html>
+{% block content %}
+    <h1>Ckjdj </h1>
+{% endblock %}
